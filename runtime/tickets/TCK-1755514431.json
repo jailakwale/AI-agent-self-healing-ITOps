@@ -1,0 +1,4 @@
+{
+  "title": "[Self-Heal] web-api - DEGRADED",
+  "body": "Incident: {'service': 'web-api', 'error_rate': 0.07, 'latency_ms': 900.0, 'pod_status': 'NotReady', 'details': {'raw': {'error_rate': 0.07, 'latency_ms': 900, 'pod_status': 'NotReady'}}}\nPlan: {'incident_type': 'DEGRADED', 'recommended_action': 'restart_pod', 'rationale': 'Elevated error/latency thresholds exceeded', 'confidence': 0.8}\nExecution: {'action': 'restart_pod', 'success': True, 'message': 'Dry-run success', 'data': {}}\nValidation: {'passed': False, 'post_error_rate': 0.07, 'post_latency_ms': 900.0, 'notes': 'Validation after remediation', 'attempts': 2}\n"
+}

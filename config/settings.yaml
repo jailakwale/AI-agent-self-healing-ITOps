@@ -1,0 +1,19 @@
+mode: mock              # mock | real
+dry_run: true
+llm:
+  provider: mock        # mock | openai
+  model: gpt-4o-mini    # used if provider != mock
+routing:
+  error_rate_threshold: 0.05     # 5%
+  latency_threshold_ms: 800
+  max_attempts: 2
+recovery:
+  allowed_actions:
+    - restart_pod
+    - rollback_deploy
+memory:
+  use_pinecone: false
+  namespace: itops-incidents
+  top_k: 4
+notify:
+  slack_channel: "#ops-alerts"
